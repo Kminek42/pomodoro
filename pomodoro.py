@@ -19,7 +19,7 @@ while 2137:
 
         # break
         play_obj = wave_obj.play()
-        
+
         if i != long_break_interval - 1:
             print(f"Break [{short_break_time}min]")
             t1 = time.time()
