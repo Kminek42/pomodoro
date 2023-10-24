@@ -5,10 +5,10 @@ file = open("config.txt", "r")
 data = file.read()
 file.close()
 
-lesson_time = float(data.split()[1])
-short_break_time = float(data.split()[3])
-long_break_time = float(data.split()[5])
-long_break_interval = float(data.split()[7])
+lesson_time = int(data.split()[1])
+short_break_time = int(data.split()[3])
+long_break_time = int(data.split()[5])
+long_break_interval = int(data.split()[7])
 
 wave_obj = sa.WaveObject.from_wave_file("./alarm.wav")
 
