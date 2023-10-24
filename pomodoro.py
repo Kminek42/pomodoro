@@ -1,12 +1,18 @@
 import time
 import simpleaudio as sa
 
-t0 = time.time()
-lesson_time = 25
-short_break_time = 5
-long_break_time = 15
-long_break_interval = 4
+file = open("config.txt", "r")
+data = file.read()
+file.close()
+
+lesson_time = float(data.split()[1])
+short_break_time = float(data.split()[3])
+long_break_time = float(data.split()[5])
+long_break_interval = float(data.split()[7])
+
 wave_obj = sa.WaveObject.from_wave_file("./alarm.wav")
+
+t0 = time.time()
 
 while 2137:
     for i in range(long_break_interval):
