@@ -18,7 +18,7 @@ t0 = time.time()
 def save_stat(filename, description):
     formatted_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    file = open("stats.txt", "a")
+    file = open(".stats.txt", "a")
     file.write(f"{formatted_datetime} {description}\n")
     file.close()
 
