@@ -41,7 +41,7 @@ while 2137:
     block("lesson", lesson_time)
 
     # break
-	break_n += 1
+    break_n += 1
     if break_n % long_break_interval:
         block("break", short_break_time)
 
